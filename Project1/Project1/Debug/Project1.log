@@ -1,2 +1,13 @@
 ﻿  main.cpp
-  Project1.vcxproj -> C:\Users\gameuser\source\repos\Project1\Debug\Project1.exe
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(22,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(77,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(77,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(83,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(83,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(89,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(89,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(95,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(95,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(101,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Project1\main.cpp(101,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Project1.vcxproj -> C:\Users\gameuser\Documents\Year 3\Game Play\Project1\Debug\Project1.exe
