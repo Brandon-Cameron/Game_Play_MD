@@ -1,0 +1,24 @@
+﻿  functions.h
+  Lab1.cpp
+  Generating Code...
+Lab1.obj : error LNK2005: "int __cdecl Reversed(int)" (?Reversed@@YAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl convertBinarytoDecimal(int)" (?convertBinarytoDecimal@@YAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "void __cdecl copyArraytoArray(int,int * const,int * const)" (?copyArraytoArray@@YAXHQAH0@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl countDuplicates(int,int * const)" (?countDuplicates@@YAHHQAH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl deleteElement(int &,int &,int * const,int)" (?deleteElement@@YA_NAAH0QAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "void __cdecl drawIsocelesTriangle2(void)" (?drawIsocelesTriangle2@@YAXXZ) already defined in functions.obj
+Lab1.obj : error LNK2005: "void __cdecl drawIsocelesTriangle(void)" (?drawIsocelesTriangle@@YAXXZ) already defined in functions.obj
+Lab1.obj : error LNK2005: "void __cdecl drawRightAngledTriangle(void)" (?drawRightAngledTriangle@@YAXXZ) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl find2ndLargest(int,int * const)" (?find2ndLargest@@YAHHQAH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl find(int,int * const,int)" (?find@@YAHHQAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl frequencyCount(int,int * const,int)" (?frequencyCount@@YAHHQAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl input5CharsConvertToInt(void)" (?input5CharsConvertToInt@@YAHXZ) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl insertElement(int &,int &,int * const,int,int)" (?insertElement@@YA_NAAH0QAHHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl isAPalindrome(int)" (?isAPalindrome@@YA_NH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl isAPrimeNumber(int)" (?isAPrimeNumber@@YA_NH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl isLeapYear(int)" (?isLeapYear@@YA_NH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "void __cdecl reverse(int,int * const)" (?reverse@@YAXHQAH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl rotateLeft(int,int * const)" (?rotateLeft@@YAHHQAH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "bool __cdecl twoMovies(int,int * const,int)" (?twoMovies@@YA_NHQAHH@Z) already defined in functions.obj
+Lab1.obj : error LNK2005: "int __cdecl wordCounter(int,char * const)" (?wordCounter@@YAHHQAD@Z) already defined in functions.obj
+C:\Users\gameuser\Documents\Year 3\Game Play\Lab1\Lab1\Debug\Lab1.exe : fatal error LNK1169: one or more multiply defined symbols found
