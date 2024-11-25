@@ -1,6 +1,7 @@
 #include "raylib.h"
 #define RAYGUI_IMPLEMENTATION
 #include "raygui.h"
+#include <iostream>
 
 #define MAX_RECTS 10000
 
@@ -16,6 +17,27 @@ const int cellHeight = 20;
 
 const int canvasWidth = 600;
 const int canvasHeight = 600;
+
+const int canvasOffset = 100;
+
+void drawPixel(Vector2 t_rectStart, int& t_rectCount, Rect t_rectangles[], Color t_currentColor)
+{
+    t_rectStart = GetMousePosition();
+    if (t_rectCount < MAX_RECTS) {
+        Vector2 rectEnd = GetMousePosition();
+
+        t_rectangles[t_rectCount].position.x = t_rectStart.x;
+        t_rectangles[t_rectCount].position.y = t_rectStart.y;
+        t_rectangles[t_rectCount].width = 20;
+        t_rectangles[t_rectCount].height = 20;
+        t_rectangles[t_rectCount].color = t_currentColor;
+
+        std::cout << GetMousePosition().x;
+        std::cout << t_rectangles[t_rectCount].position.x << "\n";
+        t_rectCount++;
+
+    }
+}
 
 int main() {
     // Initialization
@@ -45,25 +67,16 @@ int main() {
     EndTextureMode();
 
 
-
     // Main game loop
     while (!WindowShouldClose()) {
         // Update
         if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
             // Start a new rectangle
-            rectStart = GetMousePosition();
-            if (rectCount < MAX_RECTS) {
-                Vector2 rectEnd = GetMousePosition();
-
-                rectangles[rectCount].position.x = rectStart.x;
-                rectangles[rectCount].position.y = rectStart.y;
-                rectangles[rectCount].width = 20;
-                rectangles[rectCount].height = 20;
-                rectangles[rectCount].color = currentColor;
-                rectCount++;
+            if ((GetMousePosition().x >= 100 && GetMousePosition().x <= 700 - 20) && (GetMousePosition().y >= 100 && GetMousePosition().y <= 700 - 20))
+            {
+                drawPixel(rectStart, rectCount, rectangles, currentColor);
             }
         }
-
 
         // Change color based on palette selection
         for (int i = 0; i < paletteSize; i++) {
@@ -79,7 +92,7 @@ int main() {
         ClearBackground(DARKGRAY);
 
         //DrawRectangle(100, 100, canvasWidth, canvasHeight, BLANK);
-        DrawTextureRec(canvas.texture, Rectangle { 0, 0, (float)canvas.texture.width, (float)-canvas.texture.height }, Vector2{ 100, 100 }, WHITE);
+        DrawTextureRec(canvas.texture, Rectangle { 0, 0, (float)canvas.texture.width, (float)-canvas.texture.height }, Vector2{ canvasOffset, canvasOffset }, WHITE);
         //DrawTexture(canvas.texture, 0, 0, WHITE);
 
         for (int i = 5; i < 35; i++)
@@ -115,6 +128,7 @@ int main() {
 
     return 0;
 }
+
 /*#include "raylib.h"
 
 int main() {
